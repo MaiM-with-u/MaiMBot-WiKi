@@ -1,46 +1,66 @@
-# MaiMBot-WiKi
+# MaiMBot-WiKi 项目介绍
 
-Welcome to the MaiMBot-WiKi repository! This repository serves as the official documentation and knowledge base for **MaiMBot**, a smart QQ group chat bot based on large language models (LLMs). Below is an overview of the contents and purpose of this repository.
+🍔 **麦麦！MaiMBot** 是一个基于大语言模型的智能QQ群聊机器人，旨在为用户提供拟人化的聊天体验和丰富的功能支持。
 
-## 📖 Overview
+## 📝 项目简介
 
-MaiMBot is a project aimed at creating a lifelike AI companion for QQ group chats. It leverages advanced language models to provide interactive and engaging conversations, along with features like memory, scheduling, and personalized responses.
+- **框架**：基于 `nonebot2` 开发
+- **核心能力**：利用大语言模型（LLM）提供智能对话
+- **数据存储**：使用 `MongoDB` 实现数据持久化
+- **QQ协议支持**：通过 `NapCat` 实现
 
-### Key Features
-- **Chat Functionality**: Supports keyword-triggered responses, multi-model configurations, and dynamic prompt building.
-- **Emoji & Memes**: Sends contextually relevant emojis and can "steal" emojis from group members.
-- **Memory & Relationships**: Stores chat summaries and builds personalized relationships with users.
-- **Knowledge Base**: Utilizes embedding models for knowledge retrieval (currently disabled).
+## 🎯 主要功能
 
-## 📂 Repository Structure
+1. **智能聊天**
+   - 支持关键词检索主动发言
+   - 支持多模型、多厂商自定义配置
+   - 动态的 `prompt` 构建器，使回复更拟人
 
-- **`docs/`**: Contains the main documentation.
-  - **`notes/`**: Detailed notes on the project, including:
-    - [Project Introduction](/docs/notes/项目介绍.md)
-    - [Deployment Guide](/docs/notes/部署/README.md)
-    - [Image Licensing](/docs/notes/麦麦形象授权.md)
-- **`package.json`**: Configuration for the project.
-- **`.gitignore`**: Specifies files to ignore in version control.
+2. **表情包功能**
+   - 根据发言内容发送对应情绪的表情包
+   - 自动“偷”群友的表情包
 
-## 🚀 Getting Started
+3. **日程与记忆**
+   - 自动生成一天的日程
+   - 聊天记录概括存储，实现记忆功能
 
-To contribute or explore the documentation:
-1. Clone the repository.
-2. Navigate to the `docs/` folder for detailed guides.
-3. Check out the [Project Introduction](/docs/notes/项目介绍.md) for an in-depth look at MaiMBot.
+4. **知识库与关系系统**
+   - 基于 `embedding` 模型的知识库
+   - 针对用户和群组的个性化回复（开发中）
 
-## 🤝 Contribution
+## 🚀 开发计划
 
-Contributions are welcome! Feel free to submit issues or pull requests for improvements.
+- **0.6.0**：记忆系统更新
+- **0.7.0**：麦麦运行时优化
 
-## 📜 License
+更多功能正在开发中，欢迎关注！
 
-This project is open-source under the specified license. See the [LICENSE](LICENSE) file for details.
+## 📌 注意事项
 
-## 📞 Contact
+- 项目处于活跃开发阶段，可能存在已知或未知的 Bug。
+- QQ机器人存在被限制风险，请谨慎使用。
 
-Join the [QQ groups](https://maimbot.pages.dev/docs/description/#💬交流群) for discussions and support.
+## 💬 交流群
+
+- [一群](https://qm.qq.com/q/VQ3XZrWgMs) 766798517
+- [二群](https://qm.qq.com/q/RzmCiRtHEW) 571780722
+- [三群](https://qm.qq.com/q/wlH5eT8OmQ) 1035228475
+- [四群](https://qm.qq.com/q/wlH5eT8OmQ) 729957033
+
+## 📚 文档结构
+
+- **`docs/notes`**：包含项目介绍、部署指南、工具说明等文档。
+- **`docs/.vuepress`**：VuePress 相关配置。
+
+## 🌟 致谢
+
+感谢以下开源项目：
+
+- [nonebot2](https://github.com/nonebot/nonebot2)
+- [NapCat](https://github.com/NapNeko/NapCatQQ)
 
 ---
 
-**Note**: This README is a summary. For detailed information, explore the `docs/` folder.
+📅 **最后更新**：2023年11月
+
+🔗 **项目地址**：[GitHub](https://github.com/Ziphyrien/MaiMBot-WiKi)
