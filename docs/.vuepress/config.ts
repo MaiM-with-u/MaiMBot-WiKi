@@ -18,13 +18,25 @@ export default defineUserConfig({
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: '/MaiM.png' }],
-        // 预连接到字体服务
+    // --- Google Fonts Start ---
+    // 预连接到 Google Fonts 服务
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    // 预连接到 Google Fonts 静态资源服务 (需要 crossorigin)
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' }], // 注意：通常需要 crossorigin 属性
+    // 引入 Noto Serif SC 字体样式表
+    ['link', {
+      href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap',
+      rel: 'stylesheet'
+    }],
+    // --- Google Fonts End ---
+    // 预连接到 LXGW Wenkai 字体服务
     ["link", { rel: "preconnect", href: "https://cdn.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest", crossorigin: "anonymous" }],
     // 导入 LXGW Wenkai 字体样式表
     ["link", {
       rel: "stylesheet",
       href: "https://cdn.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest/style.css"
     }],
+    // 其他 meta 标签
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
   ],
   bundler: viteBundler(),

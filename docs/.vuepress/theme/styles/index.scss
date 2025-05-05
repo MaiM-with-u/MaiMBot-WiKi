@@ -3,29 +3,33 @@
   --vp-home-hero-name-background: linear-gradient(120deg, var(--vp-c-purple-1) 30%, var(--vp-c-brand-2));
   --vp-home-hero-tagline: var(--vp-c-text-2);
   --vp-home-hero-text: var(--vp-c-text-1);
-  
-  /* 背景色修改为根据提供的色调调整 */
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #636362 50%, #b4b4b4 50%);
-  
-  /* 适当的模糊效果，保持一致的视觉风格 */
   --vp-home-hero-image-filter: blur(65px);
 
-  // 设置字体
-  $font-family: 'LXGW Wenkai', sans-serif;
-  $font-family-mono: 'LXGW WenKai Mono', monospace;
+  --vp-font-family-base:
+    "Noto Serif SC",
+    'LXGW Wenkai',       /* 其次使用已引入的 霞鹜文楷 */
+    "Inter",             /* 原默认字体 */
+    ui-sans-serif,       /* 系统无衬线字体 */
+    system-ui,           /* 系统 UI 字体 */
+    sans-serif,          /* 通用无衬线后备 */
+    "Apple Color Emoji", /* Emoji 字体 */
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
 
-  // 设置全局字体
-  body, h1, h2, h3, h4, h5, h6, p, span, div, a, ul, ol, li, table, th, td, pre, code, kbd, samp {
-    font-family: $font-family;
-  }
+  --vp-font-family-mono:
+    'LXGW WenKai Mono',  /* 霞鹜文楷等宽 */    
+    ui-monospace,        /* 系统等宽字体 */
+    "Menlo",             /* macOS/iOS 等宽 */
+    "Monaco",            /* macOS 等宽 */
+    "Consolas",          /* Windows 等宽 */
+    "Liberation Mono",   /* Linux 等宽 */
+    "Courier New",       /* 经典等宽 */
+    monospace;           /* 通用等宽后备 */
 
-  // 设置标题的字体和粗细
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-  }
+  font-optical-sizing: auto;
 
-  // 设置代码的字体
-  code, pre, kbd, samp {
-    font-family: $font-family-mono;
-  }  
 }
+
+
