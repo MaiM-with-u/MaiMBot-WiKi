@@ -8,6 +8,9 @@
 
   /* --- 基础字体变量 --- */
   --vp-font-family-base:
+    "Songti SC",     
+    "SimSun",         
+    "LXGW Wenkai", 
     "Inter",
     ui-sans-serif,
     system-ui,
@@ -30,20 +33,11 @@
 
   font-optical-sizing: auto;
 
-  /* --- 其他自定义或覆盖的变量 --- */
-  /* --vp-c-brand-1: #5086a1; */
-}
 
-/* --- 针对中文语言的字体规则 (修改) --- */
 :root:where(:lang(zh)),
 :root:where(:lang(zh-CN)) {
-  --vp-font-family-base:
-    /* --- 新增首选字体 'Songti SC' 和备选字体 'LXGW Wenkai' --- */
-    "Songti SC",      /* 宋体 (macOS/iOS 优先) */
-    "SimSun",         /* 宋体 (Windows 优先) */
-    "LXGW Wenkai",    /* 霞鹜文楷 (备选) - 注意需要引号 */
-    /* --- 保留原有的其他字体作为进一步的备选 --- */
-    "Punctuation SC", /* 中文标点优化 */
+  --vp-font-family-base:  
+    "Punctuation SC",
     "Inter",
     ui-sans-serif,
     system-ui,
