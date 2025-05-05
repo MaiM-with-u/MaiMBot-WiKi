@@ -1,5 +1,4 @@
 :root {
-
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, var(--vp-c-purple-1) 30%, var(--vp-c-brand-2));
   --vp-home-hero-tagline: var(--vp-c-text-2);
@@ -20,14 +19,13 @@
 
   /* --- 等宽字体变量 --- */
   --vp-font-family-mono:
+    "LXGW WenKai Mono", 
     ui-monospace,
     "Menlo",
     "Monaco",
     "Consolas",
     "Liberation Mono",
     "Courier New",
-    /* --- 新增备选等宽字体 --- */
-    "LXGW WenKai Mono", /* 注意需要引号 */
     monospace;
 
   font-optical-sizing: auto;
