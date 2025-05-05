@@ -1,5 +1,4 @@
 :root {
-  /* 你原来的自定义变量 */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, var(--vp-c-purple-1) 30%, var(--vp-c-brand-2));
   --vp-home-hero-tagline: var(--vp-c-text-2);
@@ -7,77 +6,30 @@
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #636362 50%, #b4b4b4 50%);
   --vp-home-hero-image-filter: blur(65px);
 
-  /* --- 更新基础字体栈 --- */
   --vp-font-family-base:
-    'LXGW Wenkai', /* 优先使用 LXGW Wenkai */
-    "Inter",
-    /* 添加常见的系统字体作为备选 */
-    -apple-system, /* macOS & iOS Safari */
-    BlinkMacSystemFont, /* macOS Chrome */
-    "Segoe UI", /* Windows */
-    Roboto, /* Android & ChromeOS */
-    "Helvetica Neue", /* Older macOS */
-    Helvetica, /* Generic */
-    Arial, /* Widely available */
-    /* 中文字体备选 (也可在 :lang(zh) 中进一步指定) */
-    "Microsoft YaHei", /* Windows 微软雅黑 */
-    "PingFang SC", /* macOS & iOS 苹方 */
-    "Hiragino Sans GB", /* Older macOS */
-    sans-serif, /* 系统默认无衬线 */
-    /* 表情符号字体 */
-    "Apple Color Emoji",
+    SimSun,              /* 优先使用宋体 (需要系统安装或Web Font支持) */
+    'LXGW Wenkai',       /* 其次使用已引入的 霞鹜文楷 */
+    "Inter",             /* 原默认字体 */
+    ui-sans-serif,       /* 系统无衬线字体 */
+    system-ui,           /* 系统 UI 字体 */
+    sans-serif,          /* 通用无衬线后备 */
+    "Apple Color Emoji", /* Emoji 字体 */
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji";
 
-  /* --- 更新等宽字体栈 --- */
   --vp-font-family-mono:
-    'LXGW WenKai Mono', /* 优先使用 LXGW WenKai Mono */
-    ui-monospace,
-    "Menlo",
-    "Monaco",
-    "Consolas",
-    "Liberation Mono",
-    "Courier New",
-    monospace; /* 系统默认等宽 */
+    'LXGW WenKai Mono',  /* 霞鹜文楷等宽 */    
+    ui-monospace,        /* 系统等宽字体 */
+    "Menlo",             /* macOS/iOS 等宽 */
+    "Monaco",            /* macOS 等宽 */
+    "Consolas",          /* Windows 等宽 */
+    "Liberation Mono",   /* Linux 等宽 */
+    "Courier New",       /* 经典等宽 */
+    monospace;           /* 通用等宽后备 */
 
-  /* --- 其他 vars.css 默认字体属性 --- */
   font-optical-sizing: auto;
 
-  /* --- 这里可以继续添加或覆盖 vars.css 中的其他变量 --- */
-  /* 例如： */
-  /* --vp-c-brand-1: #5086a1; */
 }
 
-/* --- 更新针对中文语言的字体规则 --- */
-:root:where(:lang(zh)),
-:root:where(:lang(zh-CN)) {
-  --vp-font-family-base:
-    'LXGW Wenkai', /* 中文优先 LXGW Wenkai */
-    'Songti SC', /* macOS & iOS 宋体 */
-    'SimSun', /* Windows 宋体 (SimSun) */
-    'STSong', /* 旧版 macOS 宋体 */
-    'NSimsun', /* Windows 新宋体 */
-    serif, /* 系统默认衬线体 (作为宋体的最终备选) */
-    /* --- 在宋体之后再列出无衬线字体 --- */
-    "Punctuation SC", /* 标点优化 */
-    "Inter",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    "Microsoft YaHei",
-    "PingFang SC",
-    "Hiragino Sans GB",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
-}
-
-/* 你可以在这里继续添加其他的 SCSS 规则 */
 
